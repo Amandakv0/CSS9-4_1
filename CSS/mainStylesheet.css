@@ -1,0 +1,938 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0E0E0E;
+}
+.firstRowHeaderDiv{
+    display: flex;
+    width: 100%;
+    background-color: #F2F2F2;
+    justify-content: center;
+}
+@media screen and (max-width: 767px) {
+    .firstRowHeaderDiv{
+        justify-content: flex-start;
+        padding-left: 12px;
+    }
+}
+.firstRowHEaderTExtsMainDiv{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1028px;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .firstRowHEaderTExtsMainDiv{
+        width: 100%;
+        max-width: 536px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .firstRowHEaderTExtsMainDiv{
+        max-width: 288px;
+    }
+}
+.blueMiniText{
+    color: #1C2752;
+    font-size: 18px;
+}
+.mainHeaderWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+.IconsHeaderDiv{
+    display: flex;
+    gap: 17px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .IconsHeaderDiv{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    .IconsHeaderDiv{
+        display: none;
+    }
+}
+.secondRowWrapper{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+@media screen and (max-width: 767px) {
+    .secondRowWrapper{
+        padding-left: 12px;
+        justify-content: flex-start;
+    }
+}
+.secondRowHeaderDIv{
+    display: flex;
+    width: 100%;
+    max-width: 1028px;
+    justify-content: space-between;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .secondRowHeaderDIv{
+        max-width: 536px;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .secondRowHeaderDIv{
+        max-width: 288px;
+        flex-direction: column;
+        gap: 23px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .mainLogo{
+        width: 230px;
+        height: 44px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .mainLogo{
+        width: 230px;
+    }
+}
+.headerFramesDiv{
+    display: flex;
+    gap: 50px;
+}
+@media screen and (max-width: 767px) {
+    .headerFramesDiv{
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+.mailDiv, .callUsDiv{
+    display: flex;
+    gap: 8px;
+}
+.mailIconTexts{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: center;
+}
+.pinkBoldText{
+    color: #DD2590;
+    font-size: 20px;
+    font-weight: 700;
+}
+.greyMiniText{
+    color: #7E7E7E;
+    font-size: 18px;
+}
+.mainBackgroundImageDiv{
+    margin-top: 105px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 800px;
+    background-image: url("../images/mainImg.svg");
+    background-size: cover;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .mainBackgroundImageDiv{
+        background-image: url("../images/tabletMainImg.svg");
+        max-width: 704px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .mainBackgroundImageDiv{
+        background-image: url("../images/phoneMainImg.svg");
+        max-width: 328px;
+        width: 100%;
+    }
+}
+.mainImageMainDiv{
+    position: absolute;
+    left: 200px;
+    bottom: 56px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 619px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .mainImageMainDiv{
+        left: 43px;
+        bottom: 56px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .mainImageMainDiv{
+        top: 0px;
+        left: 0px;
+    }
+}
+.settingsIconDiv{
+    display: flex;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px;
+    width: 100%;
+    max-width: 470px;
+    background-color: rgba(255, 255, 255, 0.20);
+}
+.whiteMiniText{
+    color: #FFF;
+    font-size: 18px;
+}
+.mainHeaderDiv{
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 110px;
+    background: radial-gradient(120.13% 64.77% at 81.74% 32.31%, rgba(40, 43, 53, 0.00) 2.98%, rgba(0, 0, 0, 0.75) 100%);
+}
+@media screen and (max-width: 767px) {
+    .mainHeaderDiv{
+
+        top: -60px;
+    }
+}
+.mainContainerWrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+h1{
+    color: #FFF;
+    font-size: 60px;
+    font-weight: 800;
+}
+@media screen and (max-width: 767px) {
+    h1{
+        font-weight: 800;
+        margin-top: 8px;
+        font-size: 24px;
+    }
+}
+.ourservicesButton{
+    background-color: #DD2590;
+    display: flex;
+    position: absolute;
+    margin-top: 32px;
+    font-size: 20px;
+    width: 100%;
+    max-width: 210px;
+    padding: 20px 33px;
+}
+.whiteNormText{
+    color: #FFF;
+    font-weight: 600;
+}
+a{
+    text-decoration-line: none;
+}
+
+
+.seoncMianPhoneImg{
+    display: none;
+}
+@media screen and (max-width: 767px) {
+    .seoncMianPhoneImg{
+        display: flex;
+    }
+    .secondIMg{
+        display: none;
+    }
+}
+
+.secondMainContainer{
+    display: flex;
+    gap: 45px;
+    width: 100%;
+    max-width: 1028px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .secondMainContainer{
+        max-width: 704px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .secondMainContainer{
+        max-width: 288px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+.secondMainDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    width: 100%;
+    max-width: 484px;
+}
+.upperDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+@media screen and (max-width: 767px) {
+    .spon{
+        width: 100%;
+        max-width: 621px;
+    }
+}
+.welcomeNextDiv{
+    display: flex;
+    gap: 10px;
+    width: 269px;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #FFC4E7;
+}   
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .welcomeNextDiv{
+        width: fit-content;
+    }
+}
+@media screen and (max-width: 767px) {
+    .welcomeNextDiv{
+        width: fit-content;
+    }
+}
+.pinkText{
+    color: #DD2590;
+    font-size: 18px;
+    font-weight: 500;
+}
+.secondConatinerWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0px;
+}
+@media screen and (max-width: 767px) {
+    .secondConatinerWrapper{
+        flex-direction: column;
+    }
+}
+.bigPinkHeader{
+    color: #DD2590;
+    font-size: 45px;
+    font-weight: 800;
+}
+.whiteNormalText{
+    color: #FFF;
+    font-size: 18px;
+}
+.bottomDIv{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .bottomDIv{
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .bottomDIv{
+        flex-direction: column;
+        gap: 23px;
+    }
+}
+.bottomDivTExtsDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.thirdPinkDiv{
+    display: flex;
+    width: 100%;
+    max-width: 1028px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+@media screen and (max-width: 767px) {
+    .thirdPinkDiv{
+        max-width: 288px;
+    }
+}
+.thirdContainerWrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 84px 0px;
+    background-color: #DD2590;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .thirdContainerWrapper{
+        max-width: 720px;
+        padding: 60px 32px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .thirdContainerWrapper{
+        padding: 84px 16px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .thirdContainerMainWrapper{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.miniDivswhite{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    padding: 15px 30px;
+    background-color: #FFF;
+}
+.mainServiceDiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 723px;
+    align-items: center;
+    gap: 30px;
+}
+h2{
+    color: #FFF;
+    font-size: 45px;
+    font-weight: 800;
+}
+.whiteMiniiiText{
+    width: 100%;
+    max-width: 680px;
+    color: #FFF;
+    font-size: 18px;
+}
+.miniFarmesDiv{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .miniFarmesDiv{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .miniFarmesDiv{
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+.miniDivs{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #FFF;
+    background-color: transparent;
+    justify-content: center;
+    padding: 15px 30px;
+}
+.blackText{
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
+.whiteText{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+}
+.whiteDiv{
+    display: flex;
+    background-color: #FFF;
+    width: 100%;
+    padding: 60px;
+    justify-content: center;
+}
+@media screen and (max-width: 767px) {
+    .whiteDiv{
+        padding: 32px 16px;
+    }
+}
+.commercialMainDiv{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .commercialMainDiv{
+        flex-direction: column;
+        gap: 60px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .commercialMainDiv{
+        flex-direction: column;
+        gap: 23px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .comercialImage{
+        width: 508px;
+        align-self: flex-start;
+    }
+}
+.balckHeader{
+    color: #000;
+    font-size: 35px;
+    font-weight: 800;
+}
+.leftSideDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+@media screen and (max-width: 767px) {
+    .comercialImage{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    .commercials{
+        display: flex;
+        width: 100%;
+        max-width: 400pxpx;
+    }
+    
+}
+button{
+    border: none;
+}
+.readMoreBUtton{
+    margin-top: 30px;
+    background-color: #DD2590;
+    display: flex;
+    font-size: 20px;
+    width: 100%;
+    max-width: 210px;
+    padding: 20px 33px;
+    cursor: pointer;
+}
+.ourServicesDivWrapper{
+    display: flex;
+    width: 100%;
+    padding: 100px 0px;
+    justify-content: center;
+}
+.ourServicesMainDiv{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    max-width: 1028px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .ourServicesMainDiv{
+        max-width: 704px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .ourServicesMainDiv{
+        max-width: 288px;
+    }
+}
+.ourServicesHeaderDiv{
+    width: 100%;
+    max-width: 687px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+@media screen and (max-width: 767px) {
+    .ourServicesHeaderDiv{
+        max-width: 288px;
+    }
+}
+.pinkDivsDiv{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+    .pinkDivsDiv{
+        flex-direction: column;
+        gap: 22px;
+    }
+}
+.ppinkDiv{
+    display: flex;
+    background-color: #FFE1F3;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 326px;
+    padding: 47px 36px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .ppinkDiv{
+        max-width: 218px;
+        padding: 42px 35px;
+    }
+}
+.pinkTextt{
+    color: #DD2590;
+    font-size: 20px;
+    font-weight: 700;
+}
+.miniBlackText{
+    color: #000;
+    font-size: 18px;
+}
+.bolderBlackText{
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.pinkDivIcon{
+    width: 48px;
+    height: 48px;
+}
+.reasonsDivWrapper{
+    display: flex;
+    width: 100%;
+    padding: 100px 0px;
+    justify-content: flex-end;
+}
+.mainReasonsDiv{
+    display: flex;
+    width: 100%;
+    gap: 60px;
+    justify-content: flex-end;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .mainReasonsDiv{
+        flex-direction: column;
+        padding-left: Z;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 767px) {
+    .mainReasonsDiv{
+        flex-direction: column;
+    }
+}
+.reasonsDiv{
+    display: flex;
+    width: 100%;
+    max-width: 545px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .reasonsDiv{
+        max-width: 704px;
+    }
+}
+.pinkBolderText{
+    color: #DD2590;
+    font-size: 45px;
+    font-weight: 800;
+}
+.tickDivso{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.tickDivs{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.whitebolderText{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+}
+.tickDiv{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    gap: 8px;
+}
+.imageDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.blurryDiv{
+    background: rgba(28, 39, 82, 0.30);
+    display: flex;
+    backdrop-filter: blur(12px);
+    backdrop-filter: blur(12.5px);
+    flex-direction: column;
+    gap: 37px;
+    width: 100%;
+    max-width: 512px;
+    padding: 56px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@media screen and (max-width: 767px) {
+    .blurryDiv{
+        max-width: 520px;
+        gap: 12px;
+    }
+}
+.someDiv{
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+}
+.numberPinkDiv{
+    display: flex;
+    background-color: #DD2590;
+    padding: 18px;
+    width: 100%;
+    max-width: 96px;
+}
+.whiteNumber{
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 800;
+}
+.wihteBlurryFrame{
+    display: flex;
+    padding: 17px 22px;
+    border: 1px solid #FFF;
+    width: 100%;  
+    max-width: 304px;  
+}
+
+.takeWordMainDivWrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.takeWordMainDiv{
+    display: flex;
+    width: 100%;
+    max-width: 1028px;
+    flex-direction: column;
+    gap: 64px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .takeWordMainDiv{
+        max-width: 710px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .takeWordMainDiv{
+        max-width: 540px;
+    }
+}
+.mianTextsDDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.avatarFramesDiv{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 390px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .avatarFramesDiv{
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .avatarFramesDiv{
+        flex-direction: column;
+        gap: 22px;
+    }
+}
+.footerMainWrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.footerMainDiv{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1028px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .footerMainDiv{
+        max-width: 704px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .footerMainDiv{
+        max-width: 488px;
+        padding-left: 12px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .icno{
+        width: 68px;
+    }
+}
+.fooetrLogoFrame{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 55px;
+    border-bottom: 1px solid #4B557D;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .fooetrLogoFrame{
+        flex-direction: column;
+        gap: 23px;
+        border: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    .fooetrLogoFrame{
+        flex-direction: column;
+        gap: 15px;
+        border: none;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .headerMainLogo{
+        width: 230px;
+        height: 44px;
+    }
+}
+.footerLogosDiv{
+    display: flex;
+    gap: 10px;
+}
+.secondRFowMainDiv{
+    display: flex;
+    width: 100%;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #4B557D;
+    justify-content: space-between;
+    gap: 33px;
+}
+@media screen and (max-width: 1024px) {
+    .secondRFowMainDiv{
+        flex-direction: column;
+        border: none;
+        border: none;
+    }
+}
+.secondCOlFOoterDIv{
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+    gap: 34px;
+    padding-right: 34px;
+    border-right: 1px solid #4B557D;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .secondCOlFOoterDIv{
+        border: none;
+        max-width: 377px;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 767px) {
+    .secondCOlFOoterDIv{
+        flex-direction: column;
+        gap: 32px;
+        border: none;
+    }
+}
+.rowsFrame{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+    max-width: 440px;
+    padding-bottom: 25px;
+    padding-right: 34px;
+    border-right: 1px solid #4B557D;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .rowsFrame{
+        border: none;
+        max-width: 640px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .rowsFrame{
+        border: none;
+    }
+}
+.logosDiv{
+    display: flex;
+    gap: 12px;
+}
+.miniColumns{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+ul{
+    list-style: none;
+}
+.listFooter{
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+@media screen and (max-width: 767px) {
+    .listFooter{
+        text-align: left;
+        width: 100%;
+    }
+}
+.bold{
+    font-weight: bold;
+}
+.footerLastLineDiv{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.lastLine{
+    color: #FFF;
+    font-size: 16px;
+}
+.twoRowsDiv{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+    .twoRowsDiv{
+        flex-direction: column;
+        gap: 26px;
+    }
+}
