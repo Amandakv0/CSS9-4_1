@@ -511,8 +511,10 @@ h2{
         display: flex;
         width: 100%;
         max-width: 400pxpx;
-    }
-    
+    }   
+}
+.commercials{
+    display: none;
 }
 button{
     border: none;
